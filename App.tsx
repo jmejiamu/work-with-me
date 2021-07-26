@@ -1,14 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
-const { width } = Dimensions.get('window');
 const App = () => {
   return (
     <View style={styles.container}>
       <View style={styles.bckGroundView}>
-
-        <Text style={{ color: 'white' }}>React Native app with typescript</Text>
+        <Image source={require('./assets/Logo.png')} />
+        <Text style={{ color: '#DFBB3C' }}>Work with Me</Text>
       </View>
     </View >
   );
@@ -20,14 +19,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#DFBB3C',
     alignItems: 'center',
     justifyContent: 'center',
-    // borderBottomEndRadius: 500,
+
   },
   bckGroundView: {
     flex: 1,
     width: '100%',
     backgroundColor: '#35332C',
     alignItems: 'center',
-    justifyContent: 'center',
+    // justifyContent: 'center',
     borderBottomEndRadius: 500,
 
   }
