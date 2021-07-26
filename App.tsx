@@ -1,4 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
+
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
@@ -6,8 +6,10 @@ const App = () => {
   return (
     <View style={styles.container}>
       <View style={styles.bckGroundView}>
-        <Image source={require('./assets/Logo.png')} />
+        <Text style={{ color: '#DFBB3C', marginTop: 40, fontSize: 20 }}>Welcome to</Text>
+        <Image style={styles.logoStyle} source={require('./assets/Logo.png')} />
         <Text style={{ color: '#DFBB3C' }}>Work with Me</Text>
+        <Text style={{ color: '#DFBB3C', marginTop: 30, }}>A place to collaborate or find a job</Text>
       </View>
     </View >
   );
@@ -29,6 +31,9 @@ const styles = StyleSheet.create({
     // justifyContent: 'center',
     borderBottomEndRadius: 500,
 
+  },
+  logoStyle: {
+    marginTop: 30
   }
 });
 
